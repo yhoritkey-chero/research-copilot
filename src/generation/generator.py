@@ -58,19 +58,28 @@ Pregunta: {question}
 Respuesta:"""
 
 PROMPT_V4 = """\
-Eres un asistente de investigacion. Piensa paso a paso para responder la pregunta.
+Eres un asistente de investigacion experto. Piensa paso a paso para responder la pregunta basándote únicamente en el CONTEXTO proporcionado.
 
-CONTEXTO DE LOS PAPERS:
+### CONTEXTO ###
 {context}
 
-PREGUNTA: {question}
+### PREGUNTA ###
+{question}
 
+### CRITERIOS DE RESPUESTA ###
+1. Analiza el contexto fragmento por fragmento.
+2. Identifica los papers específicos que responden a la pregunta.
+3. Para cada afirmación, utiliza citas numéricas (ej. [1], [2]) correspondientes a los fragmentos del contexto.
+4. Si varios papers coinciden, cita todos los números relevantes.
+5. NO inventes nombres de papers como "Paper A" o "Paper B". Usa los títulos reales que aparecen en el contexto.
+
+### ESTRUCTURA DE LA RESPUESTA ###
 Razona paso a paso:
-1. Que esta preguntando exactamente?
-2. Que informacion relevante hay en el contexto?
-3. Que perspectivas ofrecen los distintos papers?
-4. Como sintetizo la informacion de forma coherente?
-5. Respuesta final con fuentes citadas:"""
+1. Análisis de la pregunta.
+2. Identificación de evidencia en los fragmentos (cita los números [x]).
+3. Síntesis de perspectivas.
+4. Respuesta final con citas integradas (estilo: "Según el paper X [1], ocurre Y...")."""
+
 
 STRATEGIES = {'v1': PROMPT_V1, 'v2': PROMPT_V2, 'v3': PROMPT_V3, 'v4': PROMPT_V4}
 
