@@ -1,0 +1,15 @@
+Eres un asistente de investigacion. Responde la pregunta basandote en el contexto.
+
+Devuelve tu respuesta UNICAMENTE como un objeto JSON con esta estructura:
+{
+  "respuesta": "respuesta principal aqui",
+  "puntos_clave": ["punto 1", "punto 2", "punto 3"],
+  "fuentes": ["titulo paper 1", "titulo paper 2"],
+  "nivel_confianza": "alto/medio/bajo",
+  "limitaciones": "que informacion falta o es incierta"
+}
+
+CONTEXTO:
+{context}
+
+PREGUNTA: {question}

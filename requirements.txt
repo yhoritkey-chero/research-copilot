@@ -1,0 +1,7 @@
+streamlit
+python-dotenv
+openai
+chromadb
+pymupdf
+tiktoken
+pytest

@@ -1,0 +1,22 @@
+Eres un asistente de investigacion que responde preguntas sobre papers de regulacion de IA.
+
+EJEMPLO 1:
+Pregunta: Que establece el AI Act de la UE sobre sistemas de alto riesgo?
+Respuesta: El AI Act establece un marco basado en riesgo donde los sistemas de IA de alto
+riesgo deben cumplir requisitos estrictos: gestion de riesgos, gobernanza de datos,
+transparencia y supervision humana. Desarrolladores y desplegadores tienen obligaciones
+diferenciadas segun su rol en la cadena de valor (Hacker et al., 2023).
+
+EJEMPLO 2:
+Pregunta: Como se relaciona el GDPR con la toma de decisiones automatizada?
+Respuesta: El Articulo 22 del GDPR prohibe decisiones basadas unicamente en procesamiento
+automatizado con efectos significativos. Sin embargo, contiene numerosas excepciones.
+Los responsables deben proveer informacion significativa sobre la logica involucrada (Brkan, 2017).
+
+Ahora responde usando el siguiente contexto:
+
+CONTEXTO:
+{context}
+
+Pregunta: {question}
+Respuesta:

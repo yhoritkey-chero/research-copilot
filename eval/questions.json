@@ -1,0 +1,54 @@
+{
+  "questions": [
+    {
+      "id": "q01",
+      "question": "Cuales son los principales enfoques para regular la IA en Europa y como se relacionan con la proteccion de datos personales?",
+      "expected_topics": ["AI Act", "GDPR", "riesgo", "regulacion"]
+    },
+    {
+      "id": "q02",
+      "question": "Que riesgos de privacidad plantea la IA generativa segun los papers revisados?",
+      "expected_topics": ["privacidad", "LLMs", "datos personales", "GDPR"]
+    },
+    {
+      "id": "q03",
+      "question": "Como regula el GDPR la toma de decisiones automatizada y que excepciones contempla?",
+      "expected_topics": ["Articulo 22", "GDPR", "decision automatizada", "perfilado"]
+    },
+    {
+      "id": "q04",
+      "question": "Que obligaciones impone el AI Act a los desarrolladores de modelos de IA de alto riesgo?",
+      "expected_topics": ["AI Act", "alto riesgo", "obligaciones", "transparencia"]
+    },
+    {
+      "id": "q05",
+      "question": "Como difieren los enfoques regulatorios de la UE, EEUU y Canada en materia de IA?",
+      "expected_topics": ["regulacion comparada", "EU", "US", "Canada", "estrategias"]
+    },
+    {
+      "id": "q06",
+      "question": "Que papel juegan las autoridades de proteccion de datos en la aplicacion del AI Act?",
+      "expected_topics": ["DPA", "enforcement", "AI Act", "autoridades"]
+    },
+    {
+      "id": "q07",
+      "question": "Como se relacionan la explicabilidad de la IA y los requisitos de transparencia en las politicas regulatorias?",
+      "expected_topics": ["explicabilidad", "transparencia", "XAI", "politicas"]
+    },
+    {
+      "id": "q08",
+      "question": "Cuales son los riesgos especificos de privacidad en el uso de IA generativa para marketing?",
+      "expected_topics": ["marketing", "privacidad", "IA generativa", "datos"]
+    },
+    {
+      "id": "q09",
+      "question": "Que es la IA responsable y cuales son sus principales dimensiones segun la literatura revisada?",
+      "expected_topics": ["IA responsable", "etica", "explicabilidad", "privacidad", "confianza"]
+    },
+    {
+      "id": "q10",
+      "question": "Como aborda China la gobernanza de privacidad y proteccion de datos en el contexto de la IA generativa?",
+      "expected_topics": ["China", "privacidad", "IA generativa", "gobernanza", "regulacion"]
+    }
+  ]
+}

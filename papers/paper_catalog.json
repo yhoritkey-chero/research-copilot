@@ -1,0 +1,421 @@
+{
+  "papers": [
+    {
+      "id": "paper_001",
+      "title": "AI Regulation Is (not) All You Need",
+      "authors": [
+        "Lucaj, L.",
+        "Van der Smag, P.",
+        "Benbouzid, D."
+      ],
+      "year": 2023,
+      "venue": "ACM FAccT",
+      "doi": "10.1145/35933013.3594079",
+      "filename": "3593013.3594079.pdf",
+      "topics": [
+        "AI regulation",
+        "algorithmic auditing",
+        "machine learning",
+        "ethical AI"
+      ],
+      "abstract": "The development of processes and tools for ethical, trustworthy,and legal AI is only beginning. At the same time, legal requirements are emerging in various jurisdictions, following a deluge of ethical guidelines."
+    },
+    {
+      "id": "paper_002",
+      "title": "Privacy and data protection regulations for AI using publicly available data: Clearview AI case",
+      "authors": [
+        "Jung, W. K.",
+        "Kwon, H. Y."
+      ],
+      "year": 2024,
+      "venue": "ACM FAccT",
+      "doi": "10.1145/3680127.3680200",
+      "filename": "3680127.3680200.pdf",
+      "topics": [
+        "Data protection",
+        "AI",
+        "BIPA",
+        "Biometric data",
+        "Facial recognition technology",
+        "First Amendment",
+        "GDPR",
+        "Privacy",
+        "Scraping"
+      ],
+      "abstract": "Data are pivotal resources in artificial intelligence (AI) research and development. This paper examines privacy rights and data protection laws concerning the use of publicly accessible online data in AI research."
+    },
+    {
+      "id": "paper_003",
+      "title": "A Systematic Review of Privacy Policy Literature",
+      "authors": [
+        "Javed, Y.",
+        "Sajid, A."
+      ],
+      "year": 2024,
+      "venue": "ACM FAccT",
+      "doi": "10.1145/3698393",
+      "filename": "3698393.pdf",
+      "topics": [
+        "Data protection",
+        "AI",
+        "GDPR",
+        "Privacy",
+        "Scraping"
+      ],
+      "abstract": "An organization's privacy policy states how it collects, stores, processes, and shares its users' personal information. We address this gap by conducting a systematic review of the existing privacy policy literature."
+    },
+    {
+      "id": "paper_004",
+      "title": "Democratizing GDPR Compliance: AI-Driven Privacy Policy Interpretation",
+      "authors": [
+        "Mittal, S.",
+        "Gupta, S.",
+        "Bansal, K.",
+        "Aggarwal, G."
+      ],
+      "year": 2024,
+      "venue": "ACM FAccT",
+      "doi": "10.1145/3675888.3676142",
+      "filename": "3675888.3676142.pdf",
+      "topics": [
+        "GDPR",
+        "LLMs",
+        "Personally Identifiable Information",
+        "Privacy"
+      ],
+      "abstract": "This paper presents an approach for democratizing GDPR compliance through AI-driven privacy policy interpretation leveraging Large Language Models."
+    },
+    {
+      "id": "paper_005",
+      "title": "An NLP-Based Method for Assessment of GDPR Compliance in Data Privacy Agreements",
+      "authors": [
+        "Shen, W.",
+        "Dai, T.",
+        "Cui, L.",
+        "Xu, C."
+      ],
+      "year": 2024,
+      "venue": "ACM FAccT",
+      "doi": "10.1145/3690931.3691009",
+      "filename": "3690931.3691009.pdf",
+      "topics": [
+        "GDPR",
+        "Data Processing Agreements",
+        "Compliance",
+        "Natural Language Processing"
+      ],
+      "abstract": "This paper introduces a novel NLP-based methodology that leverages the BERT text classification model to automate the assessment of GDPR compliance in Data Processing Agreements."
+    },
+    {
+      "id": "paper_006",
+      "title": "Regulating ChatGPT and other Large Generative AI Models",
+      "authors": [
+        "Hacker, P.",
+        "Engel, A.",
+        "Mauer, M."
+      ],
+      "year": 2023,
+      "venue": "ACM FAccT",
+      "doi": "10.1145/3593013.3594067",
+      "filename": "3593013.3594067.pdf",
+      "topics": [
+        "LGAIMs",
+        "LGAIM regulation",
+        "general-purpose AI systems",
+        "AI regulation",
+        "AI Act",
+        "Data protection",
+        "GDPR"
+      ],
+      "abstract": "This paper situates large generative AI models in the current debate on trustworthy AI regulation and asks how the law can be tailored to their capabilities."
+    },
+    {
+      "id": "paper_007",
+      "title": "Explainability in AI Policies: A Critical Review of Communications, Reports, Regulations, and Standards in the EU, US, and UK",
+      "authors": [
+        "Nannini, L.",
+        "Balayn, A.",
+        "Smith, A. L."
+      ],
+      "year": 2023,
+      "venue": "ACM FAccT",
+      "doi": "10.1145/3593013.3594074",
+      "filename": "3593013.3594074.pdf",
+      "topics": [
+        "AI policy",
+        "Explainable AI",
+        "social epistemology"
+      ],
+      "abstract": "We perform the first thematic and gap analysis of policies and standards on explainability in the EU, US, and UK, and formulate recommendations on how to address explainability in regulations for AI systems."
+    },
+    {
+      "id": "paper_008",
+      "title": "AI-supported decision-making under the general data protection regulation",
+      "authors": [
+        "Brkan, M."
+      ],
+      "year": 2017,
+      "venue": "ACM ICAIL",
+      "doi": "10.1145/3086512.3086513",
+      "filename": "3086512.3086513.pdf",
+      "topics": [
+        "GDPR",
+        "algorithmic transparency",
+        "automated decision-making",
+        "data protection",
+        "right to explanation"
+      ],
+      "abstract": "The purpose of this paper is to analyse the rules of the GDPR on automated decision making and to explore how to ensure transparency of such decisions, particularly those taken with the help of algorithms."
+    },
+    {
+      "id": "paper_009",
+      "title": "Should data protection authorities enforce the AI Act? Lessons from EU-wide enforcement data",
+      "authors": [
+        "Mazur, J.",
+        "Novelli, C.",
+        "Choinska, Z."
+      ],
+      "year": 2025,
+      "venue": "Oxford University Press International Data Privacy Law",
+      "doi": "10.1093/idpl/ipaf033",
+      "filename": "ipaf033.pdf",
+      "topics": [
+        "AI Act",
+        "Data Protection Authorities",
+        "enforcement",
+        "EU law"
+      ],
+      "abstract": "This article empirically investigates current DPAs' role in enforcing regulations concerning AI-driven services and automated decision-making systems to assess their suitability for enforcing the AI Act."
+    },
+    {
+      "id": "paper_010",
+      "title": "Reflections on the data protection compliance of AI systems under the EU AI Act",
+      "authors": [
+        "Hohmann, B.",
+        "Kollar, G."
+      ],
+      "year": 2025,
+      "venue": "Cogent social sciences",
+      "doi": "10.1080/23311886.2025.2560654",
+      "filename": "Reflections on the data protection compliance of AI systems under the EU AI Act.pdf",
+      "topics": [
+        "Data protection",
+        "artificial intelligence",
+        "ai act",
+        "technology law"
+      ],
+      "abstract": "This study critically analyses the regulatory environment created by the EU AI Act and its interaction with the GDPR, examining whether it provides clearer compliance pathways or introduces additional burdens."
+    },
+    {
+      "id": "paper_011",
+      "title": "A systematic review of regulatory strategies and transparency mandates in AI regulation in Europe, the United States, and Canada",
+      "authors": [
+        "Sloane, M.",
+        "Wullhorst, E."
+      ],
+      "year": 2025,
+      "venue": "Cambridge University Press Data & Policy",
+      "doi": "10.1017/dap.2024.54",
+      "filename": "a-systematic-review-of-regulatory-strategies-and-transparency-mandates-in-ai-regulation-in-europe-the-united-states-and-canada.pdf",
+      "topics": [
+        "AI regulation",
+        "compliance",
+        "sociotechnical research",
+        "transparency"
+      ],
+      "abstract": "We provide a systematic review of existing AI regulations in Europe, the United States, and Canada, identifying patterns in regulatory strategies and AI transparency requirements."
+    },
+    {
+      "id": "paper_012",
+      "title": "AI as a challenge for legal regulation - the scope of application of the artificial intelligence act proposal",
+      "authors": [
+        "Ruschemeier, H."
+      ],
+      "year": 2023,
+      "venue": "ERA Forum",
+      "doi": "10.1007/s12027-022-00725-6",
+      "filename": "12027_2022_Article_725.pdf",
+      "topics": [
+        "Artificial Intelligence",
+        "Scope of application",
+        "AIA",
+        "European Commission",
+        "Legal definitions",
+        "Regulation"
+      ],
+      "abstract": "The proposal for the Artificial Intelligence Act is the first comprehensive attempt to legally regulate AI. This article examines the difficulties of regulating the concept of AI using the scope of the AIA as an example."
+    },
+    {
+      "id": "paper_013",
+      "title": "Generative AI and data protection",
+      "authors": [
+        "Ruschemeier, H."
+      ],
+      "year": 2025,
+      "venue": "Cambridge Forum on AI: Law and Governance",
+      "doi": "10.1017/cfl.2024.2",
+      "filename": "generative-ai-and-data-protection.pdf",
+      "topics": [
+        "generative AI",
+        "data protection",
+        "GDPR",
+        "LLMs",
+        "regulation",
+        "privacy"
+      ],
+      "abstract": "This paper undertakes a comprehensive analysis of the intricate interplay between generative AI and data protection within the European legal framework."
+    },
+    {
+      "id": "paper_014",
+      "title": "AI Regulation in Europe: From the AI Act to Future Regulatory Challenges",
+      "authors": [
+        "Hacker, P."
+      ],
+      "year": 2023,
+      "venue": "Oxford University Press",
+      "doi": "10.48550/arXiv.2310.04072",
+      "filename": "2310.04072v1.pdf",
+      "topics": [
+        "AI Act",
+        "artificial intelligence",
+        "foundation models",
+        "product liability",
+        "sustainability"
+      ],
+      "abstract": "This chapter provides a comprehensive discussion on AI regulation in the EU, contrasting it with the UK's more sectoral approach, and anticipates upcoming regulatory challenges."
+    },
+    {
+      "id": "paper_015",
+      "title": "Privacy and personal data risk governance for generative artificial intelligence: A Chinese perspective",
+      "authors": [
+        "Xiongbiao, Y.",
+        "Yuhong, Y.",
+        "Jia, L.",
+        "Bo, J."
+      ],
+      "year": 2024,
+      "venue": "Telecommunications Policy",
+      "doi": "10.1016/j.telpol.2024.102851",
+      "filename": "1-s2.0-S0308596124001484-main.pdf",
+      "topics": [
+        "Generative AI",
+        "Privacy and personal data protection",
+        "Risk governance",
+        "Chinese law"
+      ],
+      "abstract": "This article examines specific privacy risks posed by generative AI and analyzes the latest practices in privacy and personal data protection in China."
+    },
+    {
+      "id": "paper_016",
+      "title": "Data security and privacy concerns of AI-driven marketing in the context of economics and business field: an exploration into possible solutions",
+      "authors": [
+        "Alhitmi, H. K.",
+        "Mardiah, A.",
+        "Al-Sulaiti, K. I.",
+        "Abbas, J."
+      ],
+      "year": 2024,
+      "venue": "Cogent Business & Management",
+      "doi": "10.1080/23311975.2024.2393743",
+      "filename": "Data security and privacy concerns of AI-driven marketing in the context of economics and business field  an exploration into possible solutions.pdf",
+      "topics": [
+        "Artificial intelligence",
+        "marketing",
+        "data security",
+        "privacy concerns"
+      ],
+      "abstract": "This article examines concerns regarding data security and privacy in AI-powered marketing and discusses possible remedies."
+    },
+    {
+      "id": "paper_017",
+      "title": "Analyzing AI regulation through literature and current trends",
+      "authors": [
+        "Dasharathraj K., S.",
+        "Vijaya Arjunan, R.",
+        "Cenitta, D.",
+        "Makkithaya, K.",
+        "Hegde, N. V."
+      ],
+      "year": 2025,
+      "venue": "Journal of Open Innovation: Technology, Market, and Complexity",
+      "doi": "10.1016/j.joitmc.2025.100508",
+      "filename": "1-s2.0-S2199853125000435-main.pdf",
+      "topics": [
+        "AI regulation",
+        "AI Regulatory frameworks",
+        "Artificial Intelligence policies",
+        "EU AI Act"
+      ],
+      "abstract": "This paper reviews literature regarding AI regulations and examines different models of regulation to gauge the literature's predictions on the scope and direction of AI regulation."
+    },
+    {
+      "id": "paper_018",
+      "title": "Generative AI in EU Law: Liability, Privacy, Intellectual Property, and Cybersecurity",
+      "authors": [
+        "Novelli, C.",
+        "Casolari, F.",
+        "Hacker, P.",
+        "Spedicato, G. A.",
+        "Floridi, L."
+      ],
+      "year": 2024,
+      "venue": "ArXiv",
+      "doi": "10.48550/arXiv.2401.07348",
+      "filename": "2401.07348v4.pdf",
+      "topics": [
+        "Generative AI",
+        "EU law",
+        "liability",
+        "privacy",
+        "intellectual property",
+        "cybersecurity"
+      ],
+      "abstract": "This paper analyses the legal and regulatory implications of Generative AI and LLMs in the EU context, focusing on liability, privacy, intellectual property, and cybersecurity."
+    },
+    {
+      "id": "paper_019",
+      "title": "Responsible Artificial Intelligence: A Structured Literature Review",
+      "authors": [
+        "Goellner, S.",
+        "Tropmann-Frick, M.",
+        "Brumen, B."
+      ],
+      "year": 2023,
+      "venue": "ArXiv",
+      "doi": "10.48550/arXiv.2403.06910",
+      "filename": "2403.06910v1.pdf",
+      "topics": [
+        "Artificial Intelligence",
+        "Responsible AI",
+        "Privacy-preserving AI",
+        "Explainable AI",
+        "Ethical AI",
+        "Trustworthy AI"
+      ],
+      "abstract": "This paper introduces a comprehensive and unified definition of responsible AI through a structured literature review, proposing a human-centric approach to Responsible AI."
+    },
+    {
+      "id": "paper_020",
+      "title": "AI Privacy in Context: A Comparative Study of Public and Institutional Discourse on Conversational AI Privacy in the US and Chinese Social Media",
+      "authors": [
+        "Zhang, R.",
+        "Li, H.",
+        "Chen, A.",
+        "Liu, Z.",
+        "Lee, Y. C."
+      ],
+      "year": 2024,
+      "venue": "Social Media + Society",
+      "doi": "10.1177/20563051241290845",
+      "filename": "zhang-et-al-2024-ai-privacy-in-context-a-comparative-study-of-public-and-institutional-discourse-on-conversational-ai.pdf",
+      "topics": [
+        "comparative privacy",
+        "AI ethics",
+        "generative AI",
+        "semantic network analysis",
+        "discourse analysis"
+      ],
+      "abstract": "This study examines public and institutional discourses on conversational AI privacy in the United States and China through semantic network and discourse analyses."
+    }
+  ]
+}
