@@ -58,27 +58,27 @@ Pregunta: {question}
 Respuesta:"""
 
 PROMPT_V4 = """\
-Eres un asistente de investigacion experto. Piensa paso a paso para responder la pregunta basándote únicamente en el CONTEXTO proporcionado.
+Eres un asistente de investigacion estrictamente limitado al CONTEXTO proporcionado.
+TU CONOCIMIENTO PREVIO NO EXISTE. Solo puedes usar la información que aparezca debajo entre [1] y [n].
 
-### CONTEXTO ###
+### CONTEXTO SUMINISTRADO ###
 {context}
 
-### PREGUNTA ###
+### PREGUNTA DEL USUARIO ###
 {question}
 
-### CRITERIOS DE RESPUESTA ###
-1. Analiza el contexto fragmento por fragmento.
-2. Identifica los papers específicos que responden a la pregunta.
-3. Para cada afirmación, utiliza citas numéricas (ej. [1], [2]) correspondientes a los fragmentos del contexto.
-4. Si varios papers coinciden, cita todos los números relevantes.
-5. NO inventes nombres de papers como "Paper A" o "Paper B". Usa los títulos reales que aparecen en el contexto.
+### REGLAS CRÍTICAS DE SEGURIDAD ###
+1. **PROHIBIDO** mencionar autores o papers que NO estén en la lista numerada de arriba (ej. NO menciones a Smith, Johnson o European Commission si no tienen un número asignado arriba).
+2. **PROHIBIDO** inventar información. Si el contexto no contiene la respuesta, di: "No hay información suficiente en los documentos cargados para responder esta pregunta".
+3. **CITA OBLIGATORIA**: Cada frase de tu respuesta debe terminar con el número del fragmento de donde salió (ej. [1]).
+4. **VERIFICACIÓN DE FUENTES**: Al final de tu respuesta, haz una lista de "Fuentes Reales Utilizadas" citando solo los títulos tal cual aparecen arriba.
 
-### ESTRUCTURA DE LA RESPUESTA ###
-Razona paso a paso:
-1. Análisis de la pregunta.
-2. Identificación de evidencia en los fragmentos (cita los números [x]).
-3. Síntesis de perspectivas.
-4. Respuesta final con citas integradas (estilo: "Según el paper X [1], ocurre Y...")."""
+### ESTRUCTURA OBLIGATORIA DE RESPUESTA ###
+Analiza paso a paso:
+1. Fragmentos encontrados: (Enlista solo los números que sirven)
+2. Síntesis Basada en Evidencia: (Responde usando citas [x] en cada punto)
+3. Fuentes Reales Utilizadas: (Copia los títulos de los fragmentos arriba)"""
+
 
 
 STRATEGIES = {'v1': PROMPT_V1, 'v2': PROMPT_V2, 'v3': PROMPT_V3, 'v4': PROMPT_V4}
