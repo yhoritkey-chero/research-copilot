@@ -1,31 +1,31 @@
 from openai import OpenAI
 
 PROMPT_V1 = """\
-Eres un asistente de investigacion especializado en regulacion de IA y privacidad de datos.
+Eres un asistente de investigacion estrictamente limitado al CONTEXTO.
+NO puedes usar tu conocimiento previo. NO menciones años (como 2021) o autores que no esten en el contexto.
 
-### CONTEXTO (fragmentos de papers academicos) ###
+### CONTEXTO ###
 {context}
 
 ### PREGUNTA ###
 {question}
 
 ### INSTRUCCIONES ###
-- Responde UNICAMENTE basandote en el contexto proporcionado.
-- Cita los titulos de los papers cuando uses informacion especifica.
-- Si el contexto no contiene suficiente informacion, indicalo.
-- Usa lenguaje academico y preciso.
+- Responde solo usando los fragmentos numerados.
+- Si no hay informacion exacta, di que no lo sabes.
+- Cita los titulos reales de los papers.
 - Maximo 3 parrafos."""
 
 PROMPT_V2 = """\
-Eres un asistente de investigacion. Responde la pregunta basandote en el contexto.
+Eres un asistente de investigacion. Responde basandote SOLO en el contexto.
+PROHIBIDO inventar años o autores (ej. no menciones 2021 si no esta arriba).
 
-Devuelve tu respuesta UNICAMENTE como un objeto JSON con esta estructura:
+Devuelve tu respuesta UNICAMENTE como un objeto JSON:
 {{
-  "respuesta": "respuesta principal aqui",
-  "puntos_clave": ["punto 1", "punto 2", "punto 3"],
-  "fuentes": ["titulo paper 1", "titulo paper 2"],
-  "nivel_confianza": "alto/medio/bajo",
-  "limitaciones": "que informacion falta o es incierta"
+  "respuesta": "respuesta basada solo en fragmentos numerados aqui",
+  "puntos_clave": ["punto 1", "punto 2"],
+  "fuentes_verificadas": ["titulo real del fragmento"],
+  "nivel_confianza": "bajo si tienes que adivinar algo"
 }}
 
 CONTEXTO:

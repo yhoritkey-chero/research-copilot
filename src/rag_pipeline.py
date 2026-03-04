@@ -77,17 +77,19 @@ class RAGPipeline:
             print(f'Papers con error: {failed}')
         return total_chunks
 
-    def query(self, question, strategy='v1', n_results=5):
-        """Ejecuta el pipeline RAG completo con bloqueo de seguridad."""
-        chunks = retrieve(question, self.embedder, self.store, n_results=n_results)
+    def query(self, question, strategy='v1', n_results=5, threshold=0.55):
+        """Ejecuta el pipeline RAG con bloqueo por umbral de similitud."""
+        all_chunks = retrieve(question, self.embedder, self.store, n_results=n_results)
         
-        # Bloqueo de Seguridad: Si la base de datos no devuelve nada relevante, 
-        # no llamamos a la IA para evitar que invente con su conocimiento previo.
+        # Filtrar por distancia: solo nos quedamos con los que realmente se parecen a la pregunta
+        chunks = [c for c in all_chunks if c['distance'] < threshold]
+        
+        # Bloqueo de Seguridad: Si no hay nada suficientemente cerca
         if not chunks:
             return {
                 'question':      question,
                 'strategy':      strategy,
-                'answer':        "❌ **Error de Seguridad**: No se han encontrado fragmentos relevantes en la biblioteca local para esta pregunta. Para evitar alucinaciones, el sistema se ha bloqueado. Por favor, asegúrate de que el tema esté cubierto en tus PDFs.",
+                'answer':        "❌ **Información no encontrada**: No hay fragmentos en la base de datos que hablen con suficiente precisión sobre este tema. El sistema ha bloqueado la respuesta para evitar alucinaciones.",
                 'sources':       [],
                 'n_chunks_used': 0
             }
@@ -95,8 +97,7 @@ class RAGPipeline:
         context = format_context(chunks)
         answer  = generate(question, context, strategy=strategy)
         
-        # Doble verificación: si la respuesta cita fuentes inexistentes (alucinación post-IA)
-        # Esto es un respaldo adicional al prompt.
+        # Asegurar que las fuentes mostradas son solo las que pasaron el filtro
         titles_in_db = {c['metadata']['title'] for c in chunks}
         
         return {
@@ -106,6 +107,7 @@ class RAGPipeline:
             'sources':       list(titles_in_db),
             'n_chunks_used': len(chunks)
         }
+
 
 
     def get_all_paper_titles(self):
