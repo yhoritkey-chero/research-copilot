@@ -78,17 +78,35 @@ class RAGPipeline:
         return total_chunks
 
     def query(self, question, strategy='v1', n_results=5):
-        """Ejecuta el pipeline RAG completo."""
-        chunks  = retrieve(question, self.embedder, self.store, n_results=n_results)
+        """Ejecuta el pipeline RAG completo con bloqueo de seguridad."""
+        chunks = retrieve(question, self.embedder, self.store, n_results=n_results)
+        
+        # Bloqueo de Seguridad: Si la base de datos no devuelve nada relevante, 
+        # no llamamos a la IA para evitar que invente con su conocimiento previo.
+        if not chunks:
+            return {
+                'question':      question,
+                'strategy':      strategy,
+                'answer':        "❌ **Error de Seguridad**: No se han encontrado fragmentos relevantes en la biblioteca local para esta pregunta. Para evitar alucinaciones, el sistema se ha bloqueado. Por favor, asegúrate de que el tema esté cubierto en tus PDFs.",
+                'sources':       [],
+                'n_chunks_used': 0
+            }
+
         context = format_context(chunks)
         answer  = generate(question, context, strategy=strategy)
+        
+        # Doble verificación: si la respuesta cita fuentes inexistentes (alucinación post-IA)
+        # Esto es un respaldo adicional al prompt.
+        titles_in_db = {c['metadata']['title'] for c in chunks}
+        
         return {
             'question':      question,
             'strategy':      strategy,
             'answer':        answer,
-            'sources':       list({c['metadata']['title'] for c in chunks}),
+            'sources':       list(titles_in_db),
             'n_chunks_used': len(chunks)
         }
+
 
     def get_all_paper_titles(self):
         """Retorna lista de (id, title) para la UI."""
