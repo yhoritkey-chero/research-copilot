@@ -62,15 +62,23 @@ if question := st.chat_input('Haz una pregunta sobre regulación de IA y privaci
         st.markdown(question)
 
     with st.chat_message('assistant'):
-        with st.spinner('Buscando en los papers...'):
-            result = pipeline.query(question, strategy=strategy, n_results=n_results)
+        with st.spinner('Buscando en la base de datos local...'):
+            # Forzamos un threshold estricto de 0.50 para evitar alucinaciones
+            result = pipeline.query(question, strategy=strategy, n_results=n_results, threshold=0.50)
+        
         st.markdown(result['answer'])
-        with st.expander(f"Fuentes ({len(result['sources'])} papers)"):
-            for src in result['sources']:
-                st.write(f'- {src}')
+        
+        # Mostramos información de depuración para que el usuario sepa qué está pasando
+        if result['n_chunks_used'] > 0:
+            with st.expander(f"📚 Fuentes Verificadas ({len(result['sources'])} documentos reales)"):
+                for src in result['sources']:
+                    st.write(f'✅ **{src}**')
+        else:
+            st.warning("⚠️ El sistema bloqueó esta respuesta porque no encontró evidencia en tus PDFs.")
 
     st.session_state.messages.append({
         'role': 'assistant',
         'content': result['answer'],
-        'sources': result['sources'],
+        'sources': result['sources']
     })
+
